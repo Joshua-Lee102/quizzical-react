@@ -1,0 +1,154 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body{
+    background: url("./background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+}
+
+.start-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #293264;
+    font-family: Karla;
+}
+
+.title{
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.title-description{
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: .5em;
+    margin-bottom: 2.5em;
+}
+
+.start-btn{
+    font-family: inherit;
+    border-radius: 15px;
+    background: #4D5B9E; 
+    color: #F5F7FB;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 1em 2.5em;
+    border:none;
+}
+
+.start-btn:hover{
+    cursor:pointer;
+}
+
+.start-btn:active, .check-btn:active{
+   scale: .95; 
+}
+
+/*  */
+
+.quiz-container{
+    border-bottom: 1px solid #9093a0;
+    margin-bottom: 1.5em;
+}
+
+.question-text{
+    color: #293264;
+    font-size: 1.15rem;
+    font-weight: 700;
+}
+
+.question-answers{
+    border-radius: 8px;
+    border: 1px solid #4D5B9E;
+    color: #293264;
+    text-align: center;
+    font-size: .8rem;
+    font-weight: 500;
+    padding: 1em 1.75em;
+    margin-bottom: 2.5em;
+}
+
+.question-answers:not(:first-of-type) {
+    margin-left: 2em;
+}
+
+.question-answers:hover, .check-btn:hover{
+    cursor: pointer;
+}
+
+.check-btn{
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    background: #4D5B9E;
+    color: #F5F7FB;
+    font-size: 1rem;
+    font-weight: 600;
+    border:none;
+    border-radius:8px;
+    padding: 1em 2em;
+}
+
+.selected {
+    background-color: #4D5B9E;
+    color: #F5F7FB;
+}
+
+.end-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.answers{
+    margin-right: 2em;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.play-again-btn{
+    font-family: inherit;
+    border-radius: 15px;
+    background: #4D5B9E; 
+    color: #F5F7FB;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 1em 2em;
+    border:none;
+}
+
+.play-again-btn:hover{
+    cursor:pointer;
+}
+
+.play-again-btn:active{
+    scale:.95;
+}
+
+.correct {
+    background-color: #94D7A2;
+    color: #293264;
+    border:none;
+}
+
+.correct:hover{
+    cursor: default;
+}
+
+.incorrect {
+    background-color: #f39898;
+    color: #293264;
+    border: none;
+}
+
+.question-answers:disabled {
+    opacity: 50%;
+    cursor: not-allowed;
+}
